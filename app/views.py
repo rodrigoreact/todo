@@ -25,11 +25,15 @@ def delete(request,id):
     }
     return render(request,'list.html',context=mydictionary)
 
-def list(request):
-    mydictionary = {
-        "alltodos" : Todo.objects.all()
-    }
-    return render(request,'list.html',context=mydictionary)
+# def list(request):
+#     mydictionary = {
+#         "alltodos" : Todo.objects.all()
+#     }
+#     return render(request,'list.html',context=mydictionary)
+
+# def list(request):
+#     all_todos = Todo.objects.all()
+#     return render(request, 'list.html', {'all_todos': all_todos})
 
 def sortdata(request):
     mydictionary ={
